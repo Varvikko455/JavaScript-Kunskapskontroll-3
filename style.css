@@ -80,3 +80,22 @@ header{
 header h1{
     color: #ffffff;
 }
+.control-button{
+    margin-top: 1rem;
+}
+.control-button span{
+    color: #000000;
+    cursor: pointer;
+    background-color: rgb(189, 132, 58);
+    border-radius: 10px;
+    padding: 3px 10px;
+    border: solid black 1px;
+}
+    .control-button:hover{
+        opacity: .9;
+    }
+.name{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 1rem;
+}

@@ -4,6 +4,27 @@ let counter = 0;
 let firstClick = true;
 let cardPair = [];
 
+let startGame = document.querySelector(".control-button span");
+let helloName = document.querySelector(".name span");
+
+
+
+
+function User(name){
+	this.name = name;
+}
+
+startGame.onclick = function () {
+	let yourName = prompt("Whats Your Name?");
+	let UserOne = new User(yourName);
+        if (yourName == null || yourName == "") {
+            helloName.innerHTML = 'Unknown';
+        } else {
+            helloName.innerHTML = `Hello ${UserOne.name} and welcome to The Memory Game, please choose a theme of your cards and press Enter`;
+        }
+		startGame.remove();
+};
+
 
 
 let input = document.querySelector('.input')
